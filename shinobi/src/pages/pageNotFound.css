@@ -1,0 +1,11 @@
+.main {
+    width: 100%;
+    margin: 100px auto;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.main h1 {
+    text-align: center;
+}
