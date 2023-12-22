@@ -1,0 +1,104 @@
+.header {
+    width: 100%;
+}
+
+.header .header-links {
+    width: 100%;
+    display: flex;
+}
+
+.header .header-links .left {
+    width: 70%;
+    float: left;
+}
+
+.header .header-links .left ul {
+    width: 100%;
+    display: flex;
+}
+
+.header .header-links .left ul li {
+    margin-right: 20px;
+}
+
+.header .header-links .left ul li a{
+    color: white;
+    font-size: 80%;
+}
+
+.header .header-links .right {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
+.header .header-links .right ul {
+    width: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.header .header-links .right ul li a{
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 1px solid #837878;
+}
+
+.header .header-links .right .active {
+    background-color: #4E8BFE;
+}
+
+.header .header-links .right ul li a{
+    color: white;
+    font-size: 14px;
+}
+
+.header-section {
+    width: 30%;
+    margin: 150px auto;
+    color: wheat;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 130%;
+}
+
+.header-section h1 {
+    line-height: 60px;
+}
+
+.header-section a {
+    letter-spacing: 1px;
+    color: white;
+    padding: 8px;
+    border: 1px solid #837878;
+    border-radius: 8px;
+    margin: 50px auto;
+    display: block;
+    width: 160px;
+    background-color: #4E8BFE;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+
+.header-nav-item {
+    width: 25%;
+    padding: 20px;
+    background-color: #16161E;
+    border-radius: 20px;
+}
+
+.header-nav-item .item {
+    font-size: 29px;
+    color: blue;
+    background-color: #16161E;
+    padding: 16px;
+    border-radius: 50%;
+}
