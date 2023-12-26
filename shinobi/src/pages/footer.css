@@ -1,0 +1,124 @@
+.footer {
+    background-image: url(../images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    padding: 40px 0;
+    color: white;
+    overflow: hidden;
+}
+
+.footer .section-side {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .section-side .left-side {
+    width: 50%;
+    float: left;
+    padding: 0 50px;
+}
+
+.footer .section-side h2 {
+    width: 50%;
+    font-size: 160%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.footer .section-side a {
+    color: white;
+    font-size: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: #4E8BFE;
+}
+
+.email-side {
+    width: 100%;
+    margin: 100px 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.email-side h2{
+    font-size: 170%;
+    font-weight: bold;
+}
+
+.email-side span{
+    margin: 10px;
+    display: block;
+    font-size: 80%;
+    color: #898CA9;
+}
+
+.email-side span a{
+    color: white;
+}
+
+.email-side input {
+    background-color: inherit;
+    border: 1px solid #4E8BFE;
+    border-radius: 8px;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    color: #898CA9;
+}
+
+.email-side button {
+    margin-left: -30px;
+    background-color: inherit;
+    color: #898CA9;
+    border: none;
+    cursor: pointer;
+}
+
+.links-side {
+    border-top: 1px solid #15151eba;
+    overflow: hidden;
+}
+
+.links-side .email {
+    padding-top: 40px;
+    width: 50%;
+    float: left;
+}
+
+.links-side .email input {
+    background-color: inherit;
+    border: 1px solid #4E8BFE;
+    border-radius: 8px;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    color: #898CA9;
+}
+
+.links-side .email button {
+    margin-left: -30px;
+    background-color: inherit;
+    color: #898CA9;
+    border: none;
+    cursor: pointer;
+}
+
+.links-side .links {
+    width: 50%;
+    float: right;
+}
+
+.links-side .links  ul li{
+    margin-bottom: 20px;
+}
+
+.links-side .links  ul li a{
+    font-size: 80%;
+    color: #898CA9;
+}
