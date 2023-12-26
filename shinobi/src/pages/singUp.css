@@ -1,13 +1,24 @@
+.form-logo {
+    background-image: url(../images/formLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
 .singup {
     width: 70%;
     margin: 100px auto;
     overflow: hidden;
-    /* background-color: red; */
 }
 
 .singup .form-side {
-    width: 70%;
-    /* float: right; */
+    width: 50%;
+    float: right;
     margin: 0 auto;
 }
 
@@ -15,7 +26,7 @@
     background-color: #16161E;
     border: none;
     border-radius: 8px;
-    width: 100%;
+    width: 96%;
     height: 30px;
     padding: 5px;
 }
@@ -70,10 +81,52 @@
     cursor: pointer;
 }
 
-.singup .background-side {
+.background-side {
+    width: 48%;
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.background-side h2 {
+    letter-spacing: 2px;
+}
+
+.background-side span {
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #898CA9;
+}
+
+.background-side a.form {
+    display: block;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: inherit;
+    border: 1px solid #16161E;
+    color: #4E8BFE;
+    width: 80px;
+    border-radius: 12px;
+}
+
+.link {
+    color: #898CA9;
+    font-size: 70%;
+}
+
+.logo {
+    display: flex;
     width: 100%;
-    background-image: url("../images/blockchain.jpg"); /* The image used */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+}
+
+.logo h1 {
+    margin-left: 15px;
+    margin-top: 5px;
 }

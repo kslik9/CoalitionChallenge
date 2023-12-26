@@ -1,5 +1,9 @@
-.header {
-    width: 100%;
+.header-background {
+    background-image: url(../images/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .header .header-links {
@@ -13,8 +17,9 @@
 }
 
 .header .header-links .left ul {
-    width: 100%;
+    width: 70%;
     display: flex;
+    justify-content: flex-end;
 }
 
 .header .header-links .left ul li {
@@ -30,13 +35,14 @@
     width: 30%;
     float: right;
     text-align: right;
+    display: flex;
 }
 
 .header .header-links .right ul {
     width: 100%;
     display: flex;
     text-align: right;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .header .header-links .right ul li a{
@@ -97,8 +103,13 @@
 
 .header-nav-item .item {
     font-size: 29px;
-    color: blue;
-    background-color: #16161E;
+    color: #4E8BFE;
+    background-color: #1b2330;
     padding: 16px;
     border-radius: 50%;
+}
+
+.header-nav-item a {
+    color: #4E8BFE;
+    font-size: 80%;
 }

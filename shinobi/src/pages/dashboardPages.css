@@ -1,0 +1,126 @@
+.dashboard-section {
+    width: 80%;
+    float: right;
+}
+
+.dashboard-section .content {
+    width: 60%;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #16161E;
+    text-align: center;
+    opacity: .6;
+    border-radius: 12px;
+}
+
+.dashboard-section .content div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dashboard-section .content-logo {
+    margin-bottom: 50px !important;
+}
+
+.dashboard-section .content-logo img {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.dashboard-section .content-info span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.dashboard-section .content-info span.active {
+    padding: 10px;
+    background-color: #0B0B0F;
+    border-radius: 20px;
+}
+
+.dashboard-section form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-section form div input {
+    background-color: #0B0B0F;
+    border: none;
+    border-radius: 8px;
+    width: 96%;
+    color: white;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dashboard-section form button {
+    background-color: #6A1B9A;
+    border: none;
+    border-radius: 8px;
+    width: 15%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.dashboard-section .name {
+    background-color: #0B0B0F;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-section .image{
+    margin: 60px 0 !important;
+}
+
+.dashboard-section .image img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.dashboard-section .hash {
+    background-color: #0B0B0F;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dashboard-section .hash-name {
+    width: 100%;
+    text-align: left;
+    font-size: 80%;
+    color: #484852;
+    margin-bottom: 5px;
+}
+
+.dashboard-section svg {
+    font-size: 150%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.dashboard-section div span.secure{
+    font-size: 90%;
+    color: #484852;
+}
+
+.dashboard-section .share a{
+    color: white;
+    background-color: #6A1B9A;
+    padding: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 50px;
+}
