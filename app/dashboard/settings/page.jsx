@@ -8,7 +8,7 @@ export default function Settings() {
 
   return (
     <div className="grid  h-screen w-full overflow-hidden lg:grid-cols-[30rem_1fr]">
-      <div className="hidden border-r bg-white lg:block">
+      <div className="hidden rounded-3xl bg-white/10 lg:block">
         <Side />
       </div>
       <div className="place-self-center">
