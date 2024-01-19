@@ -30,4 +30,3 @@ export default function Dashboard() {
     </div>
   )
 }
-{/* <div className="grid h-screen w-screen  overflow-hidden grid-cols-4"> */}

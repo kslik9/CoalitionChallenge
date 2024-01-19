@@ -7,12 +7,12 @@ export default function Settings() {
   const { user, isLoaded } = useUser()
 
   return (
-    <div className="grid  h-screen w-full overflow-hidden lg:grid-cols-[30rem_1fr]">
-      <div className="hidden rounded-3xl bg-white/10 lg:block">
+    <div className="overflow-hidden h-screen w-screen flex flex-row">
+      <div className="hidden w-[25%] rounded-3xl bg-white/10 lg:block">
         <Side />
       </div>
-      <div className="place-self-center">
-        <UserProfile />
+      <div className="m-auto p-8"> 
+          <UserProfile />
       </div>
     </div>
   )
