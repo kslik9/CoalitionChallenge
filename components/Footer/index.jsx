@@ -16,10 +16,10 @@ export default function Footer() {
           </Button>
         </form>
         <div className="flex space-x-4 mt-6">
-          <Link className="underline text-sm text-gray-400" href="#">
+          <Link className="underline text-gray-400" href="#">
             Terms & Conditions
           </Link>
-          <Link className="underline text-sm text-gray-400" href="#">
+          <Link className="underline text-gray-400" href="#">
             Privacy Policy
           </Link>
         </div>

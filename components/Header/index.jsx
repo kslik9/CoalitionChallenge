@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs"
 
 const navigation = [
@@ -15,6 +15,9 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { user, isLoaded, isSignedIn } = useUser()
+
+
+
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -40,11 +43,16 @@ export default function Header() {
             </Link>
           </SignedOut>
           <SignedIn>
-            <Link href="/dashboard" className="text-sm font-semibold leading-6">
+
+            <Link href="/dashboard" className="text-sm font-semibold ">
               {isLoaded && isSignedIn ? (
-                <div className="flex gap-4 items-center">
-                  <UserButton />
-                  <div>{user.firstName}</div>
+                <div className="flex gap-8 items-center">
+                  <div className="flex items-center gap-4">
+                    <UserButton />
+                    <div>{user.firstName}</div>
+                  </div>
+                  {user.id == "user_2a2QvZD4Emtr91Ukn13M1kqdXi8" && <Link className="" href="/admin">Admin page</Link> }
+
                 </div>
               ) : (
                 ""
@@ -67,29 +75,15 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <Link key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50 hover:text-black">
+                  <Link key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">
                     {item.name}
                   </Link>
                 ))}
               </div>
               <div className="py-6">
-                <SignedOut>
-                  <Link href="/auth" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50 hover:text-black">
-                    Log in <span aria-hidden="true">&rarr;</span>
-                  </Link>
-                </SignedOut>
-                <SignedIn>
-                  <Link href="/dashboard" className="text-sm font-semibold leading-6">
-                    {isLoaded && isSignedIn ? (
-                      <div className="flex gap-4 items-center">
-                        <UserButton />
-                        <div className="font-semibold text-base">{user.firstName}</div>
-                      </div>
-                    ) : (
-                      ""
-                    )}{" "}
-                  </Link>
-                </SignedIn>
+                <Link href="/auth" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                  Log in
+                </Link>
               </div>
             </div>
           </div>

@@ -12,8 +12,8 @@ export default function Side() {
         <ul className="text-sm font-medium flex-1">
           {navigation.map((item, idx) => (
             <li key={idx}>
-              <Link href={item.href} className="flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 active:bg-gray-100 duration-150">
-                <div className="text-gray-500">{item.icon}</div>
+              <Link href={item.href} className="flex font-semibold text-base items-center gap-x-2 text-white p-2 rounded-lg  hover:bg-gray-50 hover:text-black active:bg-gray-100 duration-150">
+                <div className=" hover:text-black">{item.icon}</div>
                 {item.name}
               </Link>
             </li>
@@ -23,8 +23,8 @@ export default function Side() {
           <ul className="text-sm font-medium">
             {navsFooter.map((item, idx) => (
               <li key={idx}>
-                <Link href={item.href} className="flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 active:bg-gray-100 duration-150">
-                  <div className="text-gray-500">{item.icon}</div>
+                <Link href={item.href} className="flex items-center font-semibold text-base gap-x-2 text-white p-2 rounded-lg  hover:bg-gray-50 hover:text-black active:bg-gray-100 duration-150">
+                  <div className=" hover:text-black">{item.icon}</div>
                   {item.name}
                 </Link>
               </li>
